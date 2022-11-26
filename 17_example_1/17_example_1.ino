@@ -67,12 +67,12 @@ void loop()
   myservo.writeMicroseconds(duty);
 
   // print IR sensor value, distnace, duty !!!
-  Serial.print("MIN: "); Serial.print(DIST_MIN);
+  Serial.print("MIN: "); Serial.print(_DIST_MIN);
   Serial.print(", IR: "); Serial.print(a_value);
   Serial.print(", dist: "); Serial.print(dist);
   Serial.print(", ema: "); Serial.print(dist_ema);
   Serial.print(", servo: "); Serial.print(duty);
-  Serial.print(", MAX: "); Serial.print(DIST_MAX);
+  Serial.print(", MAX: "); Serial.print(_DIST_MAX);
   Serial.println();
   //Serial.print("ADC Read: "); Serial.print(a_value);
   //Serial.print(" = ");
